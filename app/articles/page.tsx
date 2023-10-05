@@ -3,6 +3,7 @@ import React from "react";
 interface Article {
   id: number;
   name: string;
+  email: string;
 }
 
 const ArticlesPage = async () => {
@@ -14,11 +15,22 @@ const ArticlesPage = async () => {
   return (
     <>
       <h1>Articles</h1>
-      <ul>
-        {articles.map((article) => (
-          <li key={article.id}>{article.name}</li>
-        ))}
-      </ul>
+      <table className="table table-bordered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          {articles.map((article) => (
+            <tr key={article.id}>
+              <td>{article.name}</td>
+              <td>{article.email}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 };
