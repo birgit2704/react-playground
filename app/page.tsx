@@ -1,13 +1,13 @@
-"use client";
 import Link from "next/link";
-import ProductCard from "./components/ProductCard";
 
-export default function Home() {
+import React from "react";
+
+const Home = () => {
   return (
     <main>
-      <h1>hello world</h1>
-      <Link href="/articles">Articles</Link>
-      <ProductCard />
+      <h1>HomePage</h1>
     </main>
   );
-}
+};
+
+export default Home;
