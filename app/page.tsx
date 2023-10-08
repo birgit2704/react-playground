@@ -1,21 +1,29 @@
 import React from "react";
-import Link from "next/link";
-import Image from "next/image";
+import SecondaryNavbar from "./components/SecondaryNavbar";
+import ArtikelCard from "./components/ArtikelCard";
+import VideoCard from "./components/VideoCard";
 
 const Home = () => {
   return (
-    <main>
+    <main className="mx-auto">
       <h1 className="text-center mb-5">HomePage</h1>
-      <nav className="flex justify-around">
-        <Link href="/angeln">
-          <Image src="/images/fisch.jpg" alt="" width={50} height={50} />
-          Angeln
-        </Link>
-        <Link href="/jagen">
-          <Image src="/images/hund.jpg" alt="" width={50} height={50} />
-          Jagen
-        </Link>
-      </nav>
+      <SecondaryNavbar />
+      <section className="pb-5">
+        <h2 className="text-center">Unsere neuesten Artikel</h2>
+        <div className="flex justify-around">
+          <ArtikelCard />
+          <ArtikelCard />
+          <ArtikelCard />
+        </div>
+      </section>
+      <section className="py-10">
+        <h2 className="text-center">Unsere neuesten Videos</h2>
+        <div className="flex justify-around">
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+        </div>
+      </section>
     </main>
   );
 };
