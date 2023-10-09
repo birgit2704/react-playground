@@ -5,10 +5,10 @@ const VideoCard = () => {
   return (
     <div className="card card-bordered w-80 bg-base-100 shadow-xl grid grid-rows-2">
       <div className="pt-3">
-        <iframe
+        {/* <iframe
           className="absolute inset-0 h-[50%] w-full rounded-t-2xl"
           src="https://www.youtube-nocookie.com/embed/FMrtSHAAPhM"
-        ></iframe>
+        ></iframe> */}
       </div>
       <div className="card-body">
         <h2 className="card-title">Shoes!</h2>
