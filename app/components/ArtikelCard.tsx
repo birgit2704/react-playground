@@ -16,7 +16,7 @@ const ArtikelCard = (props: Props) => {
           alt={props.name}
         />
       </figure>
-      <div className="card-body">
+      <div className="card-body dark:bg-green-600">
         <h2 className="card-title">{props.id}</h2>
         <p>{props.name}</p>
         <div className="card-actions justify-end">
