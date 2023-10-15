@@ -8,18 +8,29 @@ const config: Config = {
   ],
 
   theme: {
-    container: {
-      center: true,
-      padding: {
-        DEFAULT: "1rem",
-        md: "1.5rem",
-        lg: "2rem",
+    extend: {
+      textColor: {
+        pp: {
+          base: "var(--color-text-base)",
+          muted: "var(--color-text-muted)",
+        },
+      },
+      backgroundColor: {
+        pp: {
+          fill: "var(--color-fill)",
+          "button-accent": "var(--color-button-accent)",
+          "button-hover": "var(--color-button-hover)",
+        },
+      },
+      gradientColorStops: {
+        pp: {
+          hue: "var(--color-fill)",
+        },
       },
     },
   },
+
   plugins: [require("daisyui")],
-  daisyui: {
-    themes: ["light", "dark"],
-  },
 };
+
 export default config;

@@ -16,11 +16,14 @@ const ArtikelCard = (props: Props) => {
           alt={props.name}
         />
       </figure>
-      <div className="card-body dark:bg-green-600">
-        <h2 className="card-title">{props.id}</h2>
+      <div className="card-body bg-pp-fill">
+        <h2 className="card-title text-pp-base">{props.id}</h2>
         <p>{props.name}</p>
         <div className="card-actions justify-end">
-          <Link className="italic" href={`/angeln/${props.id}`}>
+          <Link
+            className="italic bg-pp-button-accent hover:bg-pp-button-hover"
+            href={`/angeln/${props.id}`}
+          >
             Weiterlesen
           </Link>
         </div>

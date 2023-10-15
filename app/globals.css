@@ -2,25 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-}
-
-/* [data-theme="dark"] {
-  background-color: black;
-  color: white;
-}
-
-[data-theme="light"] {
-  background-color: white;
-  color: black;
-} */
-
 @layer base {
   h1 {
     @apply font-extrabold text-2xl mb-3;
   }
   h2 {
     @apply font-bold text-xl my-6;
+  }
+
+  :root {
+    --color-text-base: blue;
+    --color-text-muted: lightblue;
+    --color-fill: yellow;
+    --color-button-accent: purple;
+    --color-button-hover: red;
+  }
+
+  [data-theme="dark"] {
+    --color-text-base: yellow;
+    --color-text-muted: lightblue;
+    --color-fill: black;
+    --color-button-accent: grey;
+    --color-button-hover: red;
   }
 }
