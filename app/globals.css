@@ -12,27 +12,27 @@
 
   @media (prefers-color-scheme: dark) {
     :root {
-      --color-text-base: yellow;
-      --color-text-muted: lightblue;
-      --color-fill: black;
-      --color-button-accent: grey;
-      --color-button-hover: red;
+      --color-text-base: 255 255 0;
+      --color-text-muted: 173 216 230;
+      --color-fill: 0 0 0;
+      --color-button-accent: 128 128 128;
+      --color-button-hover: 255 0 0;
     }
   }
 
   :root {
-    --color-text-base: blue;
-    --color-text-muted: lightblue;
-    --color-fill: yellow;
-    --color-button-accent: purple;
-    --color-button-hover: red;
+    --color-text-base: 0 0 255;
+    --color-text-muted: 173 216 230;
+    --color-fill: 255 255 0;
+    --color-button-accent: 128 0 128;
+    --color-button-hover: 255 0 0;
   }
 
   [data-theme="dark"] {
-    --color-text-base: yellow;
-    --color-text-muted: lightblue;
-    --color-fill: black;
-    --color-button-accent: grey;
-    --color-button-hover: red;
+    --color-text-base: 255 255 0;
+    --color-text-muted: 173 216 230;
+    --color-fill: 0 0 0;
+    --color-button-accent: 128 128 128;
+    --color-button-hover: 255 0 0;
   }
 }

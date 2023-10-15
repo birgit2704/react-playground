@@ -11,20 +11,20 @@ const config: Config = {
     extend: {
       textColor: {
         pp: {
-          base: "var(--color-text-base)",
-          muted: "var(--color-text-muted)",
+          base: "rgb(var(--color-text-base) / <alpha-value>)",
+          muted: "rgb(var(--color-text-muted) / <alpha-value>)",
         },
       },
       backgroundColor: {
         pp: {
-          fill: "var(--color-fill)",
-          "button-accent": "var(--color-button-accent)",
-          "button-hover": "var(--color-button-hover)",
+          fill: "rgb(var(--color-fill) / <alpha-value>)",
+          "button-accent": "rgb(var(--color-button-accent) / <alpha-value>)",
+          "button-hover": "rgb(var(--color-button-hover) / <alpha-value>)",
         },
       },
       gradientColorStops: {
         pp: {
-          hue: "var(--color-fill)",
+          hue: "rgb(var(--color-fill) / <alpha-value>)",
         },
       },
     },
