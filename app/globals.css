@@ -10,6 +10,16 @@
     @apply font-bold text-xl my-6;
   }
 
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-text-base: yellow;
+      --color-text-muted: lightblue;
+      --color-fill: black;
+      --color-button-accent: grey;
+      --color-button-hover: red;
+    }
+  }
+
   :root {
     --color-text-base: blue;
     --color-text-muted: lightblue;
