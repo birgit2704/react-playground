@@ -3,6 +3,7 @@ import SecondaryNavbar from "./components/SecondaryNavbar";
 import ArtikelCard from "./components/ArtikelCard";
 import VideoCard from "./components/VideoCard";
 import useGetArtikel from "./hooks/useGetArtikel";
+import Link from "next/link";
 
 // (moved to hooks)
 // interface Photo {
@@ -17,6 +18,7 @@ const Home = async () => {
   // const photos: Photo[] = await res.json();
 
   const photos = await useGetArtikel();
+  const page = "3";
 
   return (
     <main className="mx-auto">
@@ -29,6 +31,7 @@ const Home = async () => {
             <ArtikelCard name={photo.name} id={photo.id} url={photo.url} />
           ))}
         </div>
+        <Link href={`/4`}>Nächste</Link>
       </section>
       <section className="py-10">
         <h2 className="text-center">Unsere neuesten Videos</h2>
